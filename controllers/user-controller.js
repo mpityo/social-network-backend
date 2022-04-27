@@ -1,12 +1,14 @@
-const { User } = require('../models');
+const { User, Thought } = require('../models');
 
 const userController = {
+    // create a new user
     createUser({ body }, res) {
         User.create(body)
          .then(dbUserData => res.json(dbUserData))
          .catch(err => res.status(400).json(err));
     },
 
+    // get all users
     getAllUsers(req, res) {
         User.find({})
          .populate({
@@ -21,6 +23,7 @@ const userController = {
          });
     },
 
+    // get one user by id
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
          .populate({
@@ -41,6 +44,7 @@ const userController = {
          })
     },
 
+    // update a user by id
     updateUser({ params, body }, res) {
         User.findOneAndUpdate(
             { _id: params.id },
@@ -57,6 +61,7 @@ const userController = {
         .catch(err => res.status(400).json(err));
     },
 
+    // delete a user by id
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.id })
          .then(dbUserData => {
