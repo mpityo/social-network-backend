@@ -19,7 +19,7 @@ npm start
 ```
 
 ## 💡 Features
-A video showcasing the functionality can be viewed [here]().
+A video showcasing the functionality can be viewed [here](./utils/social-media-backend.mp4).
  - Get all users and thoughts, as well as a single user or thought by id
  - Create, update, delete functionalities
  - MVC hierarchy used for easy portability and readability into any project
@@ -44,7 +44,3 @@ Full code, functionality, and design by yours truly @mpityo
 You may reach me at GitHub under [mpityo](https://github.com/mpityo)
 <br>
 You can also shoot an email to [mpityo@gmail.com](mailto:mpityo@gmail.com)
-
-<img src="./public/images/signup-page.png" alt="sign up page asking for username, email, and password" width="1000"/>
-<img src="./public/images/dashboard.png" alt="user dashboard that prompts user to enter a post, or edit older posts" width="1000"/>
-<img src="./public/images/edit-post.png" alt="edit post page for a specific post, with title and content filled in and post comments on bottom" width="1000"/>
